@@ -1,0 +1,75 @@
+body{
+    background-color: #0F172A;
+    color: var(--slate-300, #CBD5E1);
+}
+.radius{
+    border: 0.5px solid #7CB4FB;
+    background: linear-gradient(180deg, #1778F2 11%, rgba(23, 120, 242, 0.62) 89%);
+    filter: blur(0px);
+}
+.title{
+    background: var(--Gradient, linear-gradient(270deg, #22D3EE 50%, #0EA5E9 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-project{
+  border-radius: 20px;
+  background: rgba(30, 41, 59, 0.40);
+}
+
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:white;
+    stroke-width:4;
+    stroke-linecap:round;
+  }
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
+  nav ul li a:hover,nav ul li a.active {
+  color: #23dbdb;
+}
+
+.slideInDown {
+  display: inline-block;
+  
+  animation: animate__slideInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+.bounce {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+}
